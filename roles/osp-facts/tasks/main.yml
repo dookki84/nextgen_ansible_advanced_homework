@@ -4,6 +4,10 @@
   os_server_facts:
    cloud: openstack
   register: result
+  
+- name: Print Result
+  debug:
+    var: result
 
 - name: Add host
   add_host:
